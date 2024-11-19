@@ -76,7 +76,7 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-1 inner">
           <h1 class="animated fadeInDown">
-            <!-- J<span style="color:#E04343;">o</span>hn<br/>
+            <!-- <span style="color:#E04343;">o</span>hn<br/>
                     <span>D<span style="color:#FFE800">o</span>e</span> -->
                     
                     <style>
@@ -116,16 +116,17 @@
                           typingElement.textContent += text.charAt(index);
                           index++;
                           setTimeout(type, 150); // Mengatur kecepatan ketik
+                        } else {
+                          typingElement.style.borderRight = "none";
                         }
                       }
-                    
                       // Mulai efek ketik saat halaman dimuat
                       window.onload = type;
                     </script>
                     
                     
                   </h1><!-- Title -->
-                  <h3 class="animated fadeInUp delay-05s"><span class="rotate">Web Designer|Programmer</span></h3><!-- Text Rotator -->
+                  <h3 class="animated fadeInUp delay-05s"><span class="rotate">Web Designer | Programmer</span></h3><!-- Text Rotator -->
                 </div>
               </div>
 			  <!-- Learn More Button -->
