@@ -4,32 +4,36 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Website Title -->
+    <!-- Website Title -->
     <title>Portfolio Fadhlan</title>
     <!-- Bootstrap -->
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Font-Awesome -->
+    <!-- Font-Awesome -->
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<!-- Lightbox -->
-	<link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
+    <!-- Lightbox -->
+    <link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
     <!-- Text Rotator-->
-	<link href="assets/textrotator/simpletextrotator.css" rel="stylesheet">
-	<!-- FlexSlider -->
+    <link href="assets/textrotator/simpletextrotator.css" rel="stylesheet">
+    <!-- FlexSlider -->
     <link href="assets/flexslider/flexslider.css" rel="stylesheet">
-	<!-- Theme Style -->
+    <!-- Theme Style -->
     <link href="css/style.css" rel="stylesheet">
 	<!-- Animations -->
-    <link href="css/animate.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
 	<!-- Custom Favicon -->
 	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="assets/html5shiv/html5shiv.js"></script>
-    <script src="assets/respond/respond.min.js"></script>
-    <![endif]-->
-  </head>
-    <body id="top">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="assets/html5shiv/html5shiv.js"></script>
+  <script src="assets/respond/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body id="top">
+  
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up"></i></button>
+
 
       <!-- ****************************** Preloader ************************** -->
       <div id="preloader"></div>
@@ -78,32 +82,41 @@
                     <style>
                       .typing-text {
                         font-family: monospace;
-                        /* font-size: 1rem; */
-                        white-space: nowrap;
+                        /* font-size: 1.2rem; Menyesuaikan ukuran font */
+                        /* white-space: nowrap; */
                         overflow: hidden;
-                        border-right: 2px solid;
+                        display: inline-block;
+                        border-right: 2px solid black;
                         animation: blink-caret 0.7s step-end infinite;
                       }
-                      
-                      /* Efek berkedip pada kursor */
+                    
+                      @media (max-width: 768px) {
+                        /* Mengatur font lebih kecil di layar kecil */
+                        .typing-text {
+                          font-size: 5rem;
+                        }
+                      }
+                    
                       @keyframes blink-caret {
                         from, to { border-color: transparent; }
                         50% { border-color: black; }
                       }
-                      </style>
-
-                    <span style="animation: blink-caret 0.7s step-end infinite; overflow: hidden;" id="typing"></span>
+                    </style>
+                    
+                    <!-- Elemen teks -->
+                    <span class="typing-text" id="typing"></span>
+                    
                     <script>
-                      const text = "Fadhlan";
+                      const text = "Fadhlan Putra";
                       const typingElement = document.getElementById("typing");
                       let index = 0;
                     
                       function type() {
-                          if (index < text.length) {
-                              typingElement.textContent += text.charAt(index);
-                              index++;
-                              setTimeout(type, 150); // Mengatur kecepatan ketik
-                          }
+                        if (index < text.length) {
+                          typingElement.textContent += text.charAt(index);
+                          index++;
+                          setTimeout(type, 150); // Mengatur kecepatan ketik
+                        }
                       }
                     
                       // Mulai efek ketik saat halaman dimuat
@@ -112,7 +125,7 @@
                     
                     
                   </h1><!-- Title -->
-                  <h3 class="animated fadeInUp delay-05s"><span class="rotate">Web Designer,Programmer</span></h3><!-- Text Rotator -->
+                  <h3 class="animated fadeInUp delay-05s"><span class="rotate">Web Designer|Programmer</span></h3><!-- Text Rotator -->
                 </div>
               </div>
 			  <!-- Learn More Button -->
@@ -374,86 +387,86 @@
     <!-- ==========================
         BLOG SECTION 
         =========================== -->
-    <section class="text-center section-padding" id="blog">
+    <!-- <section class="text-center section-padding" id="blog">
           <div class="container">
-        <!-- Headline -->
+        Headline
         <div class="row">
               <div class="col-md-12">
                 <h1 class="arrow">My <span>little</span> blog</h1>
               </div>
             </div><br><br>
       
-      <!-- Blog Slider -->
+      Blog Slider
             <div class="row">
               <div id="blogSlider">
                 <ul class="slides">
                   <li>
-            <!-- Blog Entry 1 -->
+            Blog Entry 1
                     <div class="col-md-4 wp4">
                       <div class="overlay-effect effects clearfix">
                         <div class="img">
-                          <img src="img/blog1.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                          <img src="img/blog1.jpg" class="grayscale" alt="Blog Item">Blog Image
                         </div>
                       </div>
             <br>
-                      <h2>Creative Minds</h2><!-- Headline -->
+                      <h2>Creative Minds</h2>Headline
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p><!-- Description-->
                     </div>
-          <!-- Blog Entry 2 -->
+          Blog Entry 2
                     <div class="col-md-4 wp4 delay-05s">
                       <div class="overlay-effect effects clearfix">
                         <div class="img">
-                          <img src="img/blog2.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                          <img src="img/blog2.jpg" class="grayscale" alt="Blog Item">Blog Image
                         </div>
                       </div>
             <br>
-                      <h2>Creative Hearts</h2><!-- Headline -->
+                      <h2>Creative Hearts</h2>Headline
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p><!-- Description -->
                     </div>
-          <!-- Blog Entry 3 -->
+          Blog Entry 3
                     <div class="col-md-4 wp4 delay-1s">
                       <div class="overlay-effect effects clearfix">
                         <div class="img">
-                          <img src="img/blog3.jpg"  class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                          <img src="img/blog3.jpg"  class="grayscale" alt="Blog Item">Blog Image
                         </div>
                       </div>
             <br>
-                      <h2>Creative Ideas</h2><!-- Headline -->
+                      <h2>Creative Ideas</h2>Headline
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p><!-- Description-->
                     </div>
                   </li>
                   <li>
-            <!-- Blog Entry 4 -->
+            Blog Entry 4
                     <div class="col-md-4 wp4">
                       <div class="overlay-effect effects clearfix">
                         <div class="img">
-                          <img src="img/blog1.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                          <img src="img/blog1.jpg" class="grayscale" alt="Blog Item">Blog Image
                         </div>
                       </div>
             <br>
-                      <h2>Creative Minds</h2><!-- Headline -->
+                      <h2>Creative Minds</h2>Headline
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p><!-- Description -->
                     </div>
-          <!-- Blog Entry 5 -->
+          Blog Entry 5
                     <div class="col-md-4 wp4 delay-05s">
                       <div class="overlay-effect effects clearfix">
                         <div class="img">
-                          <img src="img/blog2.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                          <img src="img/blog2.jpg" class="grayscale" alt="Blog Item">Blog Image
                         </div>
                       </div>
             <br>
                       <h2>Creative Hearts</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
                     </div>
-          <!-- Blog Entry 6 -->
+          Blog Entry 6
                     <div class="col-md-4 wp4 delay-1s">
                       <div class="overlay-effect effects clearfix">
                         <div class="img">
-                          <img src="img/blog3.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                          <img src="img/blog3.jpg" class="grayscale" alt="Blog Item">Blog Image
                         </div>
                       </div>
             <br>
-                      <h2>Creative Ideas</h2><!-- Headline -->
+                      <h2>Creative Ideas</h2>Headline
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p><!-- Description -->
                     </div>
                   </li>
@@ -461,7 +474,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
     <!-- ==========================
         BLOG SECTION END
         =========================== -->
@@ -471,13 +484,13 @@
 		<!-- ==========================
         CLIENT SECTION 
         =========================== -->
-		<div class="container-fluid">
+		<!-- <div class="container-fluid">
 			<div class="row color-bg">
-				<!-- Left Image -->
+				Left Image
 				<div class="col-md-6 nopadding features-intro-img wow fadeInLeft">
 					<div class="about-image" style="background-image:url(img/clients.png)"></div>
 				</div>
-				<!-- Clients / Testimonials -->
+				Clients / Testimonials
 				<div class="col-md-6 nopadding about-text">
 				<h6>What our clients said</h6>
 					<div id="clientSlider">
@@ -489,7 +502,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- ==========================
         CLIENTS SECTION END
         =========================== -->
@@ -501,22 +514,22 @@
 		<!-- ==========================
         NEWSLETTER SECTION 
         =========================== -->
-        <section>
+        <!-- <section>
 		<div class="container-fluid">
 				<div class="row color-bg">
 				    <div class="col-md-6 nopadding subscribe text-center">
-					 <h1><i class="fa fa-paper-plane"></i><span>Subscribe our Newsletter</span></h1><!-- Heading -->
+					 <h1><i class="fa fa-paper-plane"></i><span>Subscribe our Newsletter</span></h1>
                      <form action="index.html#">
-                       <input type="text" name="" value="" placeholder="" required><!-- E-Mail -->
-                       <input type="submit" name="" value="Send"><!-- Submit Button -->
+                       <input type="text" name="" value="" placeholder="" required>
+                       <input type="submit" name="" value="Send">
                     </form>   
 					</div>
 					<div class="col-md-6 nopadding features-intro-img">
-						 <div class="about-image" style="background-image:url(img/newsletter.png)"></div><!-- Right Image -->
+						 <div class="about-image" style="background-image:url(img/newsletter.png)"></div>
 					</div>
 				</div>
 			</div>
-        </section>
+        </section> -->
 		<!-- ==========================
         NEWSLETTER SECTION END
         =========================== -->
@@ -528,7 +541,7 @@
         =========================== -->
         <section class="text-center section-padding contact-wrap" id="contact">
 		  <!-- To Top Button -->
-          <a href="index.html#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
+          <!-- <a href="index.html#top" class="up-btn"><i class="fa fa-chevron-up"></i></a> -->
           <div class="container">
 		    <!-- Headline -->
             <div class="row">
@@ -601,7 +614,7 @@
               <div class="col-md-12">
                 <ul class="social-buttons">
                   <li><a href="https://instagram.com/fadhlanputra721" target="_blank" class="social-btn"><i class="fa-brands fa-instagram"></i></a></li><!-- Instagram -->
-                  <li><a href="https://github.com/FadhlanPutra" class="social-btn"><i class="fa-brands fa-github"></i></a></li><!-- Github -->
+                  <li><a href="https://github.com/FadhlanPutra" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a></li><!-- Github -->
                 </ul>
               </div>
             </div>
@@ -628,9 +641,8 @@
 		<!-- ==========================
         FOOTER SECTION END
         =========================== -->		
-
-        <script src="https://kit.fontawesome.com/cbd855a2c0.js" crossorigin="anonymous"></script>
-		
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/cbd855a2c0.js" crossorigin="anonymous"></script>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- SmoothScroll -->           
@@ -691,9 +703,36 @@
     <script type="text/javascript">
     $(".rotate").textrotator({
       animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
-      separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+      separator: "|", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
       speed: 2000 // How many milliseconds until the next word show.
     });
+    </script>
+
+    <script>
+      // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+
+  var timerHandle = setInterval(function() {
+  if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0)
+  window.scrollBy(0,-50); else clearInterval(timerHandle); },8);
+
+  // document.body.scrollTop = 0; // For Safari
+  // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
     </script>
 	
     </body>
